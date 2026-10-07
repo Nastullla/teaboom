@@ -1,0 +1,14 @@
+{
+    "arrowParens": "avoid",
+    "singleQuote": true,
+    "overrides": [
+        {
+            "files": "**/*.scss",
+            "options": { "tabWidth": 4 }
+        },
+        {
+            "files": "**/*.html",
+            "options": { "tabWidth": 4 }
+        }
+    ]
+}

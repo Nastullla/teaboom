@@ -1,0 +1,51 @@
+@import 'main-bx';
+
+.breadcrumbs {
+    padding: 20px 0 0;
+    overflow: hidden;
+
+    &__list {
+        display: flex;
+        align-items: center;
+
+        svg {
+            margin-left: 6px;
+            margin-right: 6px;
+            width: 16px;
+            height: 16px;
+            min-width: 16px;
+        }
+    }
+
+    &__item {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0.01em;
+        color: $color_dark-gray;
+        transition: 0.35s all;
+
+        @include m-tablet() {
+            white-space: nowrap;
+        }
+
+        &:hover {
+            color: #565656;
+        }
+
+        a {
+            color: $color_dark-gray;
+        }
+    }
+
+    &__container {
+        @include m-tablet() {
+            overflow: scroll;
+            padding-bottom: 5px;
+        }
+        @media (max-width: 768px) {
+            padding-bottom: 10px;
+            margin-bottom: 6px;
+        }
+    }
+}

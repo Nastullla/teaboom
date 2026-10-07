@@ -1,0 +1,30 @@
+@import 'main-bx';
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    font-family: $accent_font;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1;
+    border-radius: 10px;
+    color: $white;
+    background-color: $color_green;
+    border: 1px solid $color_green;
+    padding: 11px;
+    text-align: center;
+    transition: 0.35s all;
+    cursor: pointer;
+
+    @include m-phone() {
+        height: 40px;
+        font-size: 14px;
+    }
+
+    &:hover {
+        color: $color_green;
+        background-color: transparent;
+    }
+}
